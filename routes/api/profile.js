@@ -8,12 +8,12 @@ const Profile = require("../../models/Profile");
 // Load User Model
 const User = require("../../models/User");
 
-// @route   GET api/profiles/test
-// @desc    Tests profiles route
+// @route   GET api/profile/test
+// @desc    Tests profile route
 // @access  Public
-router.get("/test", (req, res) => res.json({ msg: "Profiles works" }));
+router.get("/test", (req, res) => res.json({ msg: "Profile works" }));
 
-// @route   GET api/profiles
+// @route   GET api/profile
 // @desc    Get current user's profile
 // @access  Private
 router.get(
