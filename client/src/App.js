@@ -15,7 +15,7 @@ import Login from "./components/auth/Login";
 import "./App.css";
 
 // Check for token
-if (localStorage.jwt_token) {
+if (localStorage.jwtToken) {
   // Set auth token header
   setAuthToken(localStorage.jwt_decode);
   // Decode token and get user info and exp
