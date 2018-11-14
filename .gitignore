@@ -35,5 +35,6 @@ yarn-error.log*
 /client/yarn-debug.log*
 /client/yarn-error.log*
 
-config/
+/config/keys_dev.js
+/client/src/config/keys_dev.js
 package-lock.json
