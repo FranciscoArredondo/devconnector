@@ -44,19 +44,19 @@ export const createProfile = (profileData, history) => dispatch => {
 export const getProfiles = () => dispatch => {
   dispatch(setProfileLoading());
   axios
-    .get("/api/profiles")
+    .get("/api/profile/all")
     .then(res =>
       dispatch({
         type: GET_PROFILES,
         payload: res.data
       })
     )
-    .catch(err => {
+    .catch(err =>
       dispatch({
         type: GET_PROFILES,
         payload: null
-      });
-    });
+      })
+    );
 };
 
 // Add Experience
